@@ -1,10 +1,18 @@
 {
-    "type": "postgres",
-    "host": "127.0.0.1",
-    "port": 5432,
-    "username": "postgres",
-    "password": "db",
-    "database": "Internal-Application",
-    "entities": ["dist/**/*.entity{.ts,.js}"],
-    "synchronize": true
+  "type": "postgres",
+  "host": "127.0.0.1",
+  "port": 5432,
+  "username": "postgres",
+  "password": "db",
+  "database": "Internal-Application",
+  "entities": [
+    "dist/**/*.entity{.ts,.js}"
+  ],
+  "synchronize": false,
+  "migrations": [
+    "dist/src/migrations/*.js"
+  ],
+  "cli": {
+    "migrationsDir": "src/migrations"
   }
+}
