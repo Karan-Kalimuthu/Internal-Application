@@ -10,7 +10,7 @@
   ],
   "synchronize": false,
   "migrations": [
-    "dist/src/migrations/*.js"
+    "dist/migrations/*.js"
   ],
   "cli": {
     "migrationsDir": "src/migrations"
