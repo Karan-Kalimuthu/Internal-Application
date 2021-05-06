@@ -1,0 +1,2 @@
+first run migration generate command
+second run migration run command
